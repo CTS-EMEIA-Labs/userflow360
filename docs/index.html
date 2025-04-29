@@ -52,28 +52,29 @@
 
 <body class="bg-[#191919] text-white font-sans">
   <div class="relative min-h-screen overflow-hidden">
-<!-- Enhanced Layered Background -->
+<!-- Enhanced Layered Background with Right-Side Product Overlay -->
 <div class="absolute inset-0 z-0 overflow-hidden">
 
-  <!-- Main background image -->
-  <img src="./images/userflow360-product.png"
-       alt="Background"
-       class="w-full h-full object-cover opacity-60">
-
-  <!-- Brand overlay with subtle blend -->
+  <!-- Base brand overlay (entire page) -->
   <img src="https://www.consultingteam.solutions/wp-content/uploads/2020/10/2020_10_consultingteam_solutions_european_swiss_firm.png"
-       alt="Overlay"
-       class="w-full h-full object-cover absolute top-0 left-0 opacity-25 mix-blend-multiply">
+       alt="Brand Background"
+       class="w-full h-full object-cover absolute top-0 left-0 opacity-25 mix-blend-multiply z-0">
 
-  <!-- Optional visual grid for structure -->
-  <div class="absolute inset-0 bg-grid opacity-10 mix-blend-overlay"></div>
+  <!-- Product image positioned only on the right half -->
+  <img src="./images/userflow360-right-product.png"
+       alt="Product Right Panel"
+       class="absolute top-0 right-0 h-full w-1/2 object-cover opacity-90 z-0">
 
-  <!-- Subtle radial lighting for left focus -->
-  <div class="absolute inset-0 bg-gradient-radial from-transparent via-[#0f172a] to-[#000000] opacity-40"></div>
+  <!-- Optional visual grid overlay -->
+  <div class="absolute inset-0 bg-grid opacity-10 mix-blend-overlay z-0"></div>
 
-  <!-- General darkening overlay -->
-  <div class="absolute inset-0 bg-black bg-opacity-60"></div>
+  <!-- Subtle left glow focus -->
+  <div class="absolute inset-0 bg-gradient-radial from-transparent via-[#0f172a] to-[#000000] opacity-40 z-0"></div>
+
+  <!-- General dark overlay -->
+  <div class="absolute inset-0 bg-black bg-opacity-60 z-0"></div>
 </div>
+
     
     <!-- Header -->
     <header class="relative z-10 flex justify-between items-center px-6 py-4">
