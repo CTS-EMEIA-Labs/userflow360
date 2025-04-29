@@ -47,6 +47,21 @@
       padding: 0;
       height: 100%;
     }
+    @keyframes bounce-once {
+    0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(-10px);
+    }
+    60% {
+      transform: translateY(-5px);
+    }
+  }
+
+  .animate-bounce-once {
+    animation: bounce-once 0.8s ease-out 1;
+  }
   </style>
 
 <script type="application/ld+json">
@@ -117,7 +132,7 @@
           <div class="flex items-center space-x-3 text-sm">
             <a href="https://github.com/cts-emeia-labs/userflow360/blob/main/changelog/changelog-userflow360.md"
                title="View full changelog on GitHub UserFlow360"
-               class="bg-blue-500 text-white font-semibold px-3 py-1 rounded-full hover:bg-blue-700 transition">
+               class="bg-blue-500 text-white font-semibold px-3 py-1 rounded-full hover:bg-blue-700 transition animate-bounce-once">
               What's new
             </a>
             <a href="https://themeforest.net/user/cts_data_solutions"
