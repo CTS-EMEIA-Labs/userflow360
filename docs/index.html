@@ -3,28 +3,41 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>UserFlow360 – Behavioral Intelligence for Strategic Clarity</title>
+  <title>UserFlow360 – Behavioral Intelligence Tool for Strategic Clarity</title>
 
   <!-- TailwindCSS -->
   <script src="https://cdn.tailwindcss.com"></script>
   <!-- Font -->
   <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap" rel="stylesheet">
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="./images/favicon.png" sizes="32x32">
+  <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+
+  <!-- Theme Color (for mobile browser UI color) -->
+  <meta name="theme-color" content="#191919">
+
+  <style>
+  .bg-grid {
+    background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='1' height='40' fill='%23222222' /%3E%3Crect width='40' height='1' fill='%23222222' /%3E%3C/svg%3E");
+    background-size: 40px 40px;
+  }
+  </style>
 
   <!-- SEO & Social -->
   <meta name="description" content="UserFlow360: GDPR-compliant behavioral intelligence platform for enterprises. Real-time replay, friction detection, and operational UX clarity.">
-  <meta name="author" content="CTS-EMEIA Labs, Elena Debbaut, Didier Debbaut, E-GRAPHICS">
+  <meta name="author" content="CTS-EMEIA Labs, Elena Debbaut, E-GRAPHICS">
   <meta name="robots" content="index, follow">
 
   <!-- Open Graph -->
   <meta property="og:title" content="UserFlow360 – Behavioral Intelligence for Strategic Clarity">
-  <meta property="og:description" content="Explore UserFlow360: GDPR-compliant real-time analytics, friction detection, and UX intelligence for transformation leaders.">
+  <meta property="og:description" content="Explore UserFlow360: GDPR-compliant website real-time analytics, friction detection, and UX intelligence for transformation leaders.">
   <meta property="og:image" content="https://cts-emeia-labs.github.io/userflow360/docs/images/userflow360-hero.png">
   <meta property="og:url" content="https://cts-emeia-labs.github.io/userflow360/">
   <meta property="og:type" content="website">
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="UserFlow360 – Behavioral Intelligence for Strategic Clarity">
+  <meta name="twitter:title" content="UserFlow360 – Behavioral Intelligence Tool for Strategic Clarity">
   <meta name="twitter:description" content="Explore strategic UX intelligence with UserFlow360 by CTS-EMEIA Labs.">
   <meta name="twitter:image" content="https://cts-emeia-labs.github.io/userflow360/docs/images/userflow360-hero.png">
 
@@ -37,58 +50,84 @@
   </style>
 </head>
 
-<body class="min-h-screen bg-[#191919] text-white">
-  <div class="relative bg-cover bg-center min-h-screen flex flex-col justify-between"
-       style="background-image: url('./images/userflow360-hero.png');">
-    <div class="absolute inset-0 z-0" style="background-color: rgba(0, 0, 0, 0.6);"></div>
+<body class="bg-[#191919] text-white font-sans">
+  <div class="relative min-h-screen overflow-hidden">
+<!-- Enhanced Layered Background -->
+<div class="absolute inset-0 z-0 overflow-hidden">
 
+  <!-- Main background image -->
+  <img src="./images/userflow360-product.png"
+       alt="Background"
+       class="w-full h-full object-cover opacity-60">
+
+  <!-- Brand overlay with subtle blend -->
+  <img src="https://www.consultingteam.solutions/wp-content/uploads/2020/10/2020_10_consultingteam_solutions_european_swiss_firm.png"
+       alt="Overlay"
+       class="w-full h-full object-cover absolute top-0 left-0 opacity-25 mix-blend-multiply">
+
+  <!-- Optional visual grid for structure -->
+  <div class="absolute inset-0 bg-grid opacity-10 mix-blend-overlay"></div>
+
+  <!-- Subtle radial lighting for left focus -->
+  <div class="absolute inset-0 bg-gradient-radial from-transparent via-[#0f172a] to-[#000000] opacity-40"></div>
+
+  <!-- General darkening overlay -->
+  <div class="absolute inset-0 bg-black bg-opacity-60"></div>
+</div>
+    
     <!-- Header -->
-    <header class="relative z-10 flex items-center justify-between p-6">
+    <header class="relative z-10 flex justify-between items-center px-6 py-4">
       <div class="flex items-center space-x-4">
-        <img src="https://www.consultingteam.solutions/wp-content/uploads/2020/10/2020_10_logo_CTS_ElenaDebbaut.png" alt="CTS-EMEIA Logo" class="h-auto w-auto max-h-24" />
+        <img src="https://www.consultingteam.solutions/wp-content/uploads/2020/10/2020_10_logo_CTS_ElenaDebbaut.png" alt="CTS-EMEIA Logo" class="h-16 w-auto">
       </div>
-      <div class="text-white text-lg font-semibold text-right leading-tight">
-        <h1 class="text-lg md:text-xl font-semibold">CTS-EMEIA<br>Labs Asset</h1>
+      <div class="text-white text-right">
+        <h1 class="text-lg font-semibold leading-tight">CTS-EMEIA<br>Labs Asset</h1>
       </div>
     </header>
 
-    <!-- Hero Text -->
-    <main class="relative z-10 text-center px-6 py-24 max-w-4xl mx-auto">
-      <h1 class="text-5xl md:text-6xl font-bold leading-[1.2] mb-6 inline-block px-4 py-2 rounded-md backdrop-blur-sm bg-black/30"
-          style="font-family: 'DM Serif Display', Arial, Helvetica, sans-serif;">
-        UserFlow360<br />
-        <span style="color: #287db9;">Behavioral Intelligence for Strategic Clarity</span>
-      </h1>
+    <!-- Hero Content -->
+    <main class="relative z-10 flex flex-col lg:flex-row items-start justify-between px-10 py-16 max-w-7xl mx-auto">
+      <div class="max-w-2xl">
+        <div class="mb-4">
+          <a href="./changelog/changelog-userflow360.html" class="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-gray-800 text-white hover:bg-gray-700">
+            <span class="mr-2 bg-blue-500 text-white px-2 py-0.5 rounded-full text-xs">What's new</span>
+            Just shipped v1.0
+          </a>
+        </div>
 
-      <p class="text-lg md:text-xl leading-relaxed mb-8">
-        UserFlow360 delivers GDPR-compliant behavioral analytics tailored for transformation, restructuring, and operational clarity. 
-        Real-time session replay, dynamic friction detection, and enterprise-grade user journey analysis.
-      </p>
+        <h1 class="text-4xl sm:text-5xl font-bold mb-6" style="font-family: 'DM Serif Display', serif">
+          UserFlow360: GDPR-Compliant Session Intelligence
+        </h1>
 
-      <div class="flex flex-col space-y-4 mt-8">
-        <a href="./docs/installation-guide-userflow360.pdf" target="_blank" class="inline-block text-lg font-bold bg-blue-500 hover:bg-blue-600 text-white px-6 py-4 rounded shadow-lg transition">
-          📄 Download Installation Guide
-        </a>
+        <p class="text-lg mb-8 text-gray-200">
+          UX clarity meets transformation readiness. Replay sessions, detect friction, and align behavior with strategy – directly from your infrastructure.
+        </p>
 
-        <a href="./videos/demo-replay-userflow360.mp4" target="_blank" class="inline-block text-lg font-bold bg-blue-500 hover:bg-blue-600 text-white px-6 py-4 rounded shadow-lg transition">
-          🎬 Watch Product Demo
-        </a>
+        <div class="flex flex-col sm:flex-row sm:space-x-4 space-y-4 sm:space-y-0">
+          <a href="https://www.consultingteam.solutions/userflow360-session-replay/" target="_blank" class="px-6 py-3 bg-blue-500 hover:bg-blue-600 text-white font-bold rounded shadow">
+            Learn more
+          </a>
+          <a href="https://themeforest.net/user/cts_data_solutions" target="_blank" class="px-6 py-3 bg-gray-700 hover:bg-gray-800 text-white font-bold rounded shadow">
+            View Source & Templates
+          </a>
+        </div>
+      </div>
 
-        <a href="./faq/faq-userflow360.html" target="_blank" class="inline-block text-lg font-bold bg-blue-500 hover:bg-blue-600 text-white px-6 py-4 rounded shadow-lg transition">
-          ❓ View FAQ
-        </a>
-
-        <a href="https://cts-emeia-labs.github.io/showcase/" class="inline-block text-lg font-bold mt-8 bg-gray-700 hover:bg-gray-800 text-white px-6 py-4 rounded shadow-lg transition">
-          ⬅ Return to Main Showcase Assets
-        </a>
+      <div class="mt-12 lg:mt-0 flex flex-col space-y-4 text-base w-full lg:w-1/3">
+        <a href="./pdfs/installation-guide-userflow360.pdf" target="_blank" class="inline-block bg-blue-500 hover:bg-blue-600 text-white px-5 py-3 rounded shadow text-center font-bold">📄 Download Installation Guide</a>
+        <a href="./videos/demo-replay-userflow360.mp4" target="_blank" class="inline-block bg-blue-500 hover:bg-blue-600 text-white px-5 py-3 rounded shadow text-center font-bold">🎬 Watch Product Demo</a>
+        <a href="./faq/faq-userflow360.html" target="_blank" class="inline-block bg-blue-500 hover:bg-blue-600 text-white px-5 py-3 rounded shadow text-center font-bold">❓ View FAQ</a>
+        <a href="https://cts-emeia-labs.github.io/showcase/" class="inline-block bg-gray-700 hover:bg-gray-800 text-white px-5 py-3 rounded shadow text-center font-bold">⬅ Return to Main Showcase Assets</a>
       </div>
     </main>
 
     <!-- Footer -->
     <footer class="relative z-10 bg-[#191919] text-center py-6 text-sm text-white">
-      &copy; 2025 Consulting Team Solutions. Created by <a href="https://www.e-graphics.ch/" target="_blank" rel="noopener noreferrer" class="font-bold underline" title="E-GRAPHICS MarTech Agency">E-GRAPHICS</a> & <a href="https://www.consultingteam.solutions/" target="_blank" rel="noopener noreferrer" class="font-bold underline" title="CTS-EMEIA C-level Consulting Solutions">CTS-EMEIA</a>.
-      <a href="https://www.consultingteam.solutions/userflow360-session-replay/" target="_blank" rel="noopener noreferrer" class="text-blue-400 font-bold underline mt-2 inline-block" title="UserFlow360 Official">
-    🌐 Visit the Official UserFlow360 Product Page
+      &copy; 2025 Consulting Team Solutions. Created by
+      <a href="https://www.e-graphics.ch/" target="_blank" rel="noopener noreferrer" class="font-bold underline">E-GRAPHICS</a>
+      & <a href="https://www.consultingteam.solutions/" target="_blank" rel="noopener noreferrer" class="font-bold underline">CTS-EMEIA</a>.
+      <a href="https://www.consultingteam.solutions/userflow360-session-replay/" target="_blank" rel="noopener noreferrer" class="text-blue-400 font-bold underline block mt-2">
+        🌐 Visit the Official UserFlow360 Product Page
       </a>
     </footer>
   </div>
